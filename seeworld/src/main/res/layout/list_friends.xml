@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="?attr/colorPrimary"
+        android:id="@+id/id_friendsbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        > </android.support.v7.widget.Toolbar>
+    <SearchView
+        android:layout_below="@+id/id_friendsbar"
+        android:id="@+id/sv_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></SearchView>
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sv_site"
+        android:id="@+id/lv_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>
