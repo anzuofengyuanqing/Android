@@ -19,10 +19,16 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:0.5'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    implementation files('libs/okhttp-3.10.0.jar')
+    implementation files('libs/gson-2.8.4.jar')
+    implementation files('libs/Bmob_Push_1.0.1_20170907.jar')
+    implementation files('libs/Hanvon_SDK_Android_1.0.jar')
+    implementation files('libs/rxjava-1.1.6.jar')
+    implementation files('libs/tencent_map_sdk_4.0.9.173ceac.jar')
 }
