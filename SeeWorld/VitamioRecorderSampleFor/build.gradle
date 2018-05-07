@@ -2,12 +2,12 @@ apply plugin: 'android'
 
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
-    compile project(':VitamioRecorderLibrary')
+    //compile project(':Vitamio')
 }
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "19.1.0"
+    buildToolsVersion '26.0.2'
 
     sourceSets {
         main {

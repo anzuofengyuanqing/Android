@@ -16,6 +16,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -25,10 +27,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:0.5'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
-    implementation files('libs/okhttp-3.10.0.jar')
     implementation files('libs/gson-2.8.4.jar')
-    implementation files('libs/Bmob_Push_1.0.1_20170907.jar')
-    implementation files('libs/Hanvon_SDK_Android_1.0.jar')
-    implementation files('libs/rxjava-1.1.6.jar')
+    implementation files('libs/TencentStreetSDK_v.1.2.1_16735.jar')
     implementation files('libs/tencent_map_sdk_4.0.9.173ceac.jar')
+    implementation files('libs/TencentLocationSdk_v6.2.5.3_r15b3b3cc_20171103_115903.jar')
+    implementation files('libs/Bmob_Push_1.0.1_20170907.jar')
+    implementation files('libs/BmobSDK_3.6.1_20180420.jar')
 }
